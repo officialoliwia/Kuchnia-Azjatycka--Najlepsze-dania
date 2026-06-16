@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuchnia Azjatycka - Najlepsze dania</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#faf7f2;
+    color:#333;
+}
+
+header{
+    height:80vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("img/azja.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    max-width:700px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#c0392b;
+}
+
+.intro{
+    text-align:center;
+    font-size:1.1rem;
+    line-height:1.8;
+    max-width:900px;
+    margin:auto;
+    margin-bottom:70px;
+}
+
+.recipes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card h3{
+    color:#c0392b;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.ingredients{
+    background:#fff5ee;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.ingredients ul{
+    margin-left:20px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:70px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <h1>Kuchnia Azjatycka</h1>
+        <p>Odkryj aromatyczne smaki Japonii, Tajlandii, Chin, Korei Południowej i Wietnamu.</p>
+    </div>
+</header>
+
+<section class="container">
+
+    <h2 class="section-title">Dlaczego warto pokochać kuchnię azjatycką?</h2>
+
+    <p class="intro">
+        Azja słynie z niezwykle różnorodnej kuchni, która zachwyca bogactwem smaków, aromatów i tradycji przekazywanych z pokolenia na pokolenie. Każdy region kontynentu posiada własne specjały, przygotowywane według unikalnych receptur i z wykorzystaniem lokalnych składników. To właśnie dzięki tej różnorodności kuchnia azjatycka jest uznawana za jedną z najbardziej interesujących na świecie.
+		<br></br>
+		Podróżując po tym kontynencie, warto spróbować lokalnych potraw, które od lat są częścią codziennego życia mieszkańców. Łączą one w sobie tradycję, kulturę oraz charakterystyczne dla danego kraju przyprawy i sposoby przygotowywania.
+		<br></br>
+		Poniżej znajdziesz kilka najpopularniejszych dań kuchni azjatyckiej, które zdobyły uznanie nie tylko w swoich krajach pochodzenia, ale również na całym świecie. Spróbowanie ich to doskonała okazja do poznania wyjątkowych smaków kuchni azjatyckiej.
+    </p>
+
+    <h2 class="section-title">Popularne Dania</h2>
+
+    <div class="recipes">
+
+        <div class="card">
+            <img src="img/ramen.jpg" />
+
+            <div class="card-content">
+                <h3>Ramen Japoński</h3>
+
+                <div class="ingredients">                   
+                    <ul>
+                        <li>Jeden z najpopularniejszych symboli japońskiej kuchni.</li>
+                        <li>Zachwyca aromatycznym bulionem i bogactwem smaków.</li>
+                        <li>Idealny na chłodniejsze dni, ponieważ doskonale rozgrzewa.</li>
+                        <li>ozwala poczuć atmosferę tradycyjnych japońskich restauracji.</li>                       
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/padthai.jpg" />
+
+            <div class="card-content">
+                <h3>Pad Thai</h3>
+
+                <div class="ingredients">                   
+                    <ul>
+                        <li>Kultowe danie tajskiej kuchni ulicznej.</li>
+                        <li>Łączy słodkie, kwaśne i lekko pikantne nuty w jednym daniu.</li>
+                        <li>Idealny dla miłośników wyrazistych i zrównoważonych smaków.</li>
+                        <li>Doskonale oddaje charakter i różnorodność tajskiej kuchni.</li>
+						</ul>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/kurczak1.jpg" />
+
+            <div class="card-content">
+                <h3>Kurczak Gong Bao</h3>
+
+                <div class="ingredients">                   
+                    <ul>
+                        <li>Jedno z najbardziej rozpoznawalnych dań kuchni chińskiej.</li>
+                        <li>Pochodzi z regionu Syczuan, znanego z intensywnych i wyrazistych smaków.</li>
+                        <li>Łączy soczystego kurczaka z orzeszkami, papryczką chili i aromatycznym sosem.</li>
+                        <li>Charakteryzuje się idealnym balansem ostrości, słodyczy i lekko kwaśnych nut.</li>
+                        <li>To jedno z tych dań, które trudno pomylić z jakimkolwiek innym w kuchni chińskiej.</li>
+                    </ul>
+                </div>
+
+               
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/pho.jpg" />
+
+            <div class="card-content">
+                <h3>Wietnamskie Pho</h3>
+
+                <div class="ingredients">                  
+                    <ul>
+                        <li>Uznawane za narodowe danie Wietnamu.</li>
+                        <li>Idealne dla miłośników lekkich, ale aromatycznych potraw.</li>
+                        <li>Zachwyca klarownym bulionem i świeżymi dodatkami.</li>
+                        <li>To danie, które najlepiej oddaje codzienny charakter wietnamskiej kuchni.</li>
+                    </ul>
+                </div>
+
+               
+            </div>
+        </div>
+		
+		<div class="card">
+			<img src="img/korea.jpg" />
+
+			<div class="card-content">
+				<h3>Kurczak po koreańsku</h3>
+
+				<div class="ingredients">				
+				<ul>
+					<li>Znany z wyjątkowo chrupiącej panierki i intensywnych sosów.</li>
+					<li>Idealny dla fanów piekantnych dań</li>
+					<li>Jedno z najpopularniejszych dań koreańskiego street foodu.</li>
+					<li>Jest nieodłącznym elementem spotkań towarzyskich w Korei.</li>	
+					<li>Jest jednym z najbardziej rozpoznawalnych dań koreańskiej kuchni.</li>
+				</ul>
+			</div>
+
+			
+		</div>
+	</div>
+
+		<div class="card">
+			<img src="img/baobun.jpg" />
+
+			<div class="card-content">
+				<h3>Bao Bun</h3>
+
+				<div class="ingredients">			
+				<ul>
+					<li>Zachwyca miękkim i puszystym ciastem gotowanym na parze.</li>
+					<li>Łączy delikatną strukturę z wyrazistym nadzieniem.</li>
+					<li>Można je spotkać w wielu wariantach – od mięsnych po wegetariańskie.</li>
+					<li>Jedno z najbardziej charakterystycznych dań azjatyckiego street foodu.</li>
+					<li>Łączy prostotę przygotowania z bogactwem smaków.</li>					
+				</ul>
+			</div>
+
+			
+		</div>
+	</div>
+
+	</div>
+
+</section>
+
+<footer>
+	<p><strong>Autor:</strong> Oliwia Smoleń</p>
+    © 2026 Kuchnia Azjatycka | Smaki Japonii, Tajlandii, Chin, Korei Południowej i Wietnamu | Wszelkie prawa zastrzeżone.
+</footer>
+
+</body>
+</html>
